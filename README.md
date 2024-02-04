@@ -35,7 +35,77 @@ Number.ToText(Date.Year([Date])) &
         Number.ToText(Date.Day([Date]))
 )
 ```
-## 3. Measures (DAX Table):
+## 2. Data Profiling
+### vw_FactOrderDetails:
+- General Information:</br>
+Number of Rows: 121317</br>
+Number of Columns: 18</br>
+
+- Column Details:</br>
+    - SalesOrderID:</br>
+Data Type: Integer</br>
+Null Values: 0</br>
+Unique Values: 31465</br>
+Min Value: 43659</br>
+Max Value: 75123</br>
+
+    - ProductID:</br>
+Data Type: Integer</br>
+Null Values: 0</br>
+Unique Values: 266</br>
+Min Value: 707</br>
+Max Value: 999</br>
+
+    - SalesPersonID:</br>
+Data Type: Integer</br>
+Null Values: 60398</br>
+Unique Values: 18</br>
+Min Value: 274</br>
+Max Value: 290</br>
+
+    - ShipMethodID:</br>
+Data Type: Integer</br>
+Null Values: 0</br>
+Unique Values: 2</br>
+Min Value: 1</br>
+Max Value: 5</br>
+
+    - StatusID:</br>
+Data Type: Integer</br>
+Null Values: 0</br>
+Unique Values: 1</br>
+Min Value: 5</br>
+Max Value: 5</br>
+
+    - TerritoryID:</br>
+Data Type:Integer</br>
+Null Values: 0</br>
+Unique Values: 10</br>
+Min Value: 1</br>
+Max Value: 10</br>
+
+    - OrderDateKey:
+Data Type: Integer</br>
+Null Values: 0</br>
+Unique Values: 1124
+Min Value: 20110531
+Max Value: 20140630
+
+    - ShipDateKey:
+Data Type: Integer</br>
+Null Values: 0</br>
+Unique Values: 1124
+Min Value: 20110607
+Max Value: 20140707
+
+    - DueDateKey:
+Data Type: Integer</br>
+Null Values: 0</br>
+Unique Values: 1124
+Min Value: 20110612
+Max Value: 20140712
+
+## 4. Measures (DAX Table):
 - No. of Orders by Order Date Measure
   ```
   OrdersByOrderDate = CALCULATE(
