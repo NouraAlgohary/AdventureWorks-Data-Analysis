@@ -17,7 +17,7 @@ vw_DimStatuses</br>
 vw_DimTerritories</br>
 vw_FactOrderDetails</br>
 
-This [file]() contains SQL code snippets for creating views to import data. </br>
+This [file](https://github.com/NouraAlgohary/AdventureWorks-Data-Analysis/tree/main/Queries) contains SQL code snippets for creating views to import data. </br>
 DimDate (Created using Power Query)
 ## 3. Measures (DAX Table):
 - No. of Orders by Order Date Measure
