@@ -38,16 +38,14 @@ Number.ToText(Date.Year([Date])) &
 ## 3. Measures (DAX Table):
 - No. of Orders by Order Date Measure
   ```
-  OrdersByOrderDate = 
-CALCULATE(
+  OrdersByOrderDate = CALCULATE(
     COUNTROWS(
         VALUES('vw_Fact|OrderDetails'[SalesOrderID])
     ),
     USERELATIONSHIP(
        'vw_Fact|OrderDetails'[OrderDateKey],
         DimDate[DateKey]
-    )
-)
+    ))
   ```
 - No. of Orders by Ship Date Measure
 ```
