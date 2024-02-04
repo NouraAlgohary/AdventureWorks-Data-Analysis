@@ -18,7 +18,23 @@ vw_DimTerritories</br>
 vw_FactOrderDetails</br>
 
 This [file](https://github.com/NouraAlgohary/AdventureWorks-Data-Analysis/tree/main/Queries) contains SQL code snippets for creating views to import data. </br>
+</br>
 DimDate (Created using Power Query)
+```
+Number.ToText(Date.Year([Date])) & 
+(
+    if Date.Month([Date]) < 10 then
+        "0" & Number.ToText(Date.Month([Date]))
+    else 
+        Number.ToText(Date.Month([Date]))
+) & 
+(
+    if Date.Day([Date]) < 10 then
+        "0" & Number.ToText(Date.Day([Date]))
+    else 
+        Number.ToText(Date.Day([Date]))
+)
+```
 ## 3. Measures (DAX Table):
 - No. of Orders by Order Date Measure
   ```
