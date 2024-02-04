@@ -84,7 +84,7 @@ Unique Values: 10</br>
 Min Value: 1</br>
 Max Value: 10</br>
 
-    - OrderDateKey:
+    - OrderDateKey:</br>
 Data Type: Integer</br>
 Null Values: 0</br>
 Unique Values: 1124</br>
