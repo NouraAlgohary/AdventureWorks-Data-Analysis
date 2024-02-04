@@ -49,6 +49,13 @@ Unique Values: 31465</br>
 Min Value: 43659</br>
 Max Value: 75123</br>
 
+    - SalesOrderDetailsID:</br>
+Data Type: Integer</br>
+Null Values: 0</br>
+Unique Values: 121317</br>
+Min Value: 1</br>
+Max Value: 121317</br>
+
     - ProductID:</br>
 Data Type: Integer</br>
 Null Values: 0</br>
@@ -105,7 +112,29 @@ Unique Values: 1124</br>
 Min Value: 20110612</br>
 Max Value: 20140712</br>
 
+    - DueDateKey:</br>
+Data Type: Integer</br>
+Null Values: 0</br>
+Unique Values: 1124</br>
+Min Value: 20110612</br>
+Max Value: 20140712</br>
+
 ## 4. Measures (DAX Table):
+```
+MeasuresTable = 
+SUMMARIZECOLUMNS (
+    'vw_Fact|OrderDetails'[OrderDateKey],
+    'vw_Fact|OrderDetails'[DueDateKey],
+    'vw_Fact|OrderDetails'[ShipDateKey],
+    "Orders by Order Date", 'vw_Fact|OrderDetails'[OrdersByOrderDate],
+    "Orders by Ship Date", 'vw_Fact|OrderDetails'[OrdersByDueDate],
+    "Orders by Due Date", 'vw_Fact|OrderDetails'[OrdersByShipDate],
+    "Total SubTotal", [SubTotal],
+    "Total Tax", [TaxAmount],
+    "Total Freight", [Total Freight],
+    "Total Due", [Total Due]
+)
+```
 - No. of Orders by Order Date Measure
   ```
   OrdersByOrderDate = CALCULATE(
@@ -144,9 +173,22 @@ CALCULATE(
 )
 ```
 - Total SubTotal Measure
+```
+SubTotal = SUM('vw_Fact|OrderDetails'[LineTotal])
+```
 - Total Tax Measure
+```
+TaxAmount = SUM('vw_Fact|OrderDetails'[Taxamt])
+```
 - Total Freight Measure
+```
+Total Freight = SUM('vw_Fact|OrderDetails'[Freight])
+```
 - Total Due Measure
+```
+Total Due = SUM('vw_Fact|OrderDetails'[TotalDue])
+```
+
 4. Charts:
 Card for Each Chart (Order Date): Display data by Order Date using cards.
 Max Qty per Product Chart: Visualize the maximum quantity per product.
