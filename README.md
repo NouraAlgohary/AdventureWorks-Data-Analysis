@@ -1,7 +1,7 @@
 # AdventureWorks-Data-Analysis
 
 ## Project Overview:
-Welcome to the AdventureWorks GitHub documentation! This comprehensive guide will walk you through the process of importing and analyzing data from the AdventureWorks sample database. We will cover everything from creating views for importing data to constructing a star schema, creating measures, and charts, and delivering a compelling sales story.
+Welcome to the AdventureWorks Data Analysis documentation! This comprehensive guide will walk you through the process of importing and analyzing data from the AdventureWorks sample database. We will cover everything from creating views for importing data to constructing a star schema, creating measures, and charts, and delivering a compelling sales story.
 
 ![Capture](https://github.com/NouraAlgohary/AdventureWorks-Data-Analysis/assets/103903785/14f320aa-1b88-407f-8b3e-cf06adce2bfe)
 ![Q A](https://github.com/NouraAlgohary/AdventureWorks-Data-Analysis/assets/103903785/76d44f77-8cb0-4658-9b16-156629d7b469)
