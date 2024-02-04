@@ -87,23 +87,23 @@ Max Value: 10</br>
     - OrderDateKey:
 Data Type: Integer</br>
 Null Values: 0</br>
-Unique Values: 1124
-Min Value: 20110531
-Max Value: 20140630
+Unique Values: 1124</br>
+Min Value: 20110531</br>
+Max Value: 20140630</br>
 
-    - ShipDateKey:
+    - ShipDateKey:</br>
 Data Type: Integer</br>
 Null Values: 0</br>
-Unique Values: 1124
-Min Value: 20110607
-Max Value: 20140707
+Unique Values: 1124</br>
+Min Value: 20110607</br>
+Max Value: 20140707</br>
 
-    - DueDateKey:
+    - DueDateKey:</br>
 Data Type: Integer</br>
 Null Values: 0</br>
-Unique Values: 1124
-Min Value: 20110612
-Max Value: 20140712
+Unique Values: 1124</br>
+Min Value: 20110612</br>
+Max Value: 20140712</br>
 
 ## 4. Measures (DAX Table):
 - No. of Orders by Order Date Measure
