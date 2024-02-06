@@ -260,6 +260,7 @@ Tooltips offer contextual information without cluttering visuals, providing a se
 Drill down functionality allows users to explore hierarchical data at different levels, promoting a more detailed view of the data hierarchy, and enhancing user exploration.
 
 ![image](https://github.com/NouraAlgohary/AdventureWorks-Data-Analysis/assets/103903785/08e22952-3932-4b2d-8529-a9c2239ab6af)
+![image](https://github.com/NouraAlgohary/AdventureWorks-Data-Analysis/assets/103903785/62143c9b-dca1-493d-9e7f-31c42f9380de)
 ![image](https://github.com/NouraAlgohary/AdventureWorks-Data-Analysis/assets/103903785/c30fc026-37a4-4449-9564-06cc4b85e536)
 
 
