@@ -169,6 +169,11 @@ Max Value: 30992.91</br>
     SalesAmount = 'vw_Fact|OrderDetails'[UnitPrice] * 'vw_Fact|OrderDetails'[OrderQty]
     ```
 
+### vw_FactOrderDetails:
+- General Information:</br>
+Number of Rows: 504</br>
+Number of Columns: 15</br>
+
 
 ## 4. Measures (DAX Table):
 ```
