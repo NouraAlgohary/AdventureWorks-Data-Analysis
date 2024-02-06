@@ -198,47 +198,47 @@ SUMMARIZECOLUMNS (
     ))
   ```
 - No. of Orders by Ship Date Measure
-```
-OrdersByShipDate = 
-CALCULATE(
-    COUNTROWS(
-        VALUES('vw_Fact|OrderDetails'[SalesOrderID])
-    ),
-    USERELATIONSHIP(
-       'vw_Fact|OrderDetails'[ShipDateKey],
-        DimDate[DateKey]
+    ```
+    OrdersByShipDate = 
+    CALCULATE(
+        COUNTROWS(
+            VALUES('vw_Fact|OrderDetails'[SalesOrderID])
+        ),
+        USERELATIONSHIP(
+           'vw_Fact|OrderDetails'[ShipDateKey],
+            DimDate[DateKey]
+        )
     )
-)
-```
+    ```
 - No. of Orders by Due Date Measure
-```
-OrdersByDueDate = 
-CALCULATE(
-    COUNTROWS(
-        VALUES('vw_Fact|OrderDetails'[SalesOrderID])
-    ),
-    USERELATIONSHIP(
-        'vw_Fact|OrderDetails'[DueDateKey],
-        DimDate[DateKey]
+    ```
+    OrdersByDueDate = 
+    CALCULATE(
+        COUNTROWS(
+            VALUES('vw_Fact|OrderDetails'[SalesOrderID])
+        ),
+        USERELATIONSHIP(
+            'vw_Fact|OrderDetails'[DueDateKey],
+            DimDate[DateKey]
+        )
     )
-)
-```
+    ```
 - Total SubTotal Measure
-```
-SubTotal = SUM('vw_Fact|OrderDetails'[LineTotal])
-```
+    ```
+    SubTotal = SUM('vw_Fact|OrderDetails'[LineTotal])
+    ```
 - Total Tax Measure
-```
-TaxAmount = SUM('vw_Fact|OrderDetails'[Taxamt])
-```
+    ```
+    TaxAmount = SUM('vw_Fact|OrderDetails'[Taxamt])
+    ```
 - Total Freight Measure
-```
-Total Freight = SUM('vw_Fact|OrderDetails'[Freight])
-```
+    ```
+    Total Freight = SUM('vw_Fact|OrderDetails'[Freight])
+    ```
 - Total Due Measure
-```
-Total Due = SUM('vw_Fact|OrderDetails'[TotalDue])
-```
+    ```
+    Total Due = SUM('vw_Fact|OrderDetails'[TotalDue])
+    ```
 
 ## 5. Charts:</br>
 - Card for Each Chart (Order Date): Display data by Order Date using cards.
