@@ -138,7 +138,7 @@ Unique Values: 1488</br>
 Min Value: 1.37</br>
 Max Value: 27893.62</br>
 
-    -Taxamt:</br>
+    - Taxamt:</br>
 Data Type: Integer</br>
 Null Values: 0</br>
 Unique Values: 52513</br>
@@ -165,9 +165,9 @@ Null Values: 0</br>
 Unique Values: 1468</br>
 Min Value: 1.374</br>
 Max Value: 30992.91</br>
-```
-SalesAmount = 'vw_Fact|OrderDetails'[UnitPrice] * 'vw_Fact|OrderDetails'[OrderQty]
-```
+    ```
+    SalesAmount = 'vw_Fact|OrderDetails'[UnitPrice] * 'vw_Fact|OrderDetails'[OrderQty]
+    ```
 
 
 ## 4. Measures (DAX Table):
@@ -240,7 +240,7 @@ Total Freight = SUM('vw_Fact|OrderDetails'[Freight])
 Total Due = SUM('vw_Fact|OrderDetails'[TotalDue])
 ```
 
-4. Charts:</br>
+## 5. Charts:</br>
 - Card for Each Chart (Order Date): Display data by Order Date using cards.
 - Max Qty per Product Chart: Visualize the maximum quantity per product.
 - Matrix Chart (Territories, Years, Values: Total Sales, Total Canada Sales): Row-wise breakdown of territories, column-wise breakdown of years, and values represented by total sales and total Canada sales.
@@ -250,14 +250,18 @@ Total Due = SUM('vw_Fact|OrderDetails'[TotalDue])
 - Tooltip for Sales: Utilize tooltips to show sales associated with order quantity for each graph.
 - Color Theme (Exported as JSON): Create and export a custom color theme for visual consistency.
 
-5. Advanced Visualization Techniques:
+## 6. Advanced Visualization Techniques:
 In this Power BI report, I've utilized advanced visualization techniques to enhance user interaction and provide deeper insights:
 
 - Tooltips:
 Tooltips offer contextual information without cluttering visuals, providing a seamless way to access additional details when hovering over specific data points.
 
 - Drilldown:
-Drilldown functionality allows users to explore hierarchical data at different levels, promoting a more detailed view of the data hierarchy, enhancing user exploration.
+Drill down functionality allows users to explore hierarchical data at different levels, promoting a more detailed view of the data hierarchy, and enhancing user exploration.
+
+![image](https://github.com/NouraAlgohary/AdventureWorks-Data-Analysis/assets/103903785/08e22952-3932-4b2d-8529-a9c2239ab6af)
+![image](https://github.com/NouraAlgohary/AdventureWorks-Data-Analysis/assets/103903785/c30fc026-37a4-4449-9564-06cc4b85e536)
+
 
 - Drillthrough:
 Drillthrough enables users to access detailed information related to specific data points, fostering in-depth analyses based on specific queries.
