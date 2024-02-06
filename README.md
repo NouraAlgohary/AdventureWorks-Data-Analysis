@@ -240,50 +240,32 @@ Total Freight = SUM('vw_Fact|OrderDetails'[Freight])
 Total Due = SUM('vw_Fact|OrderDetails'[TotalDue])
 ```
 
-4. Charts:
-Card for Each Chart (Order Date): Display data by Order Date using cards.
-Max Qty per Product Chart: Visualize the maximum quantity per product.
-Matrix Chart (Territories, Years, Values: Total Sales, Total Canada Sales): Row-wise breakdown of territories, column-wise breakdown of years, and values represented by total sales and total Canada sales.
-QA Chart: Quality Assurance chart for data validation.
-Drilldown and Drill Through: Implement drilldown and drill through functionality for enhanced exploration.
-Product Hierarchy Chart: Create a hierarchy for products.
-Tooltip for Sales: Utilize tooltips to show sales associated with order quantity for each graph.
-Color Theme (Exported as JSON): Create and export a custom color theme for visual consistency.
-Additional Charts: Create extra charts as needed to convey the sales story effectively.
-GitHub Documentation Structure:
-Introduction:
+4. Charts:</br>
+- Card for Each Chart (Order Date): Display data by Order Date using cards.
+- Max Qty per Product Chart: Visualize the maximum quantity per product.
+- Matrix Chart (Territories, Years, Values: Total Sales, Total Canada Sales): Row-wise breakdown of territories, column-wise breakdown of years, and values represented by total sales and total Canada sales.
+- QA Chart: Quality Assurance chart for data validation.
+- Drilldown and Drill Through: Implement drilldown and drill through functionality for enhanced exploration.
+- Product Hierarchy Chart: Create a hierarchy for products.
+- Tooltip for Sales: Utilize tooltips to show sales associated with order quantity for each graph.
+- Color Theme (Exported as JSON): Create and export a custom color theme for visual consistency.
 
-Overview of the AdventureWorks data analysis project.
-Getting Started:
+5. Advanced Visualization Techniques:
+In this Power BI report, I've utilized advanced visualization techniques to enhance user interaction and provide deeper insights:
 
-Instructions on how to install and configure the AdventureWorks sample database.
-Conductivity Mode:
+- Tooltips:
+Tooltips offer contextual information without cluttering visuals, providing a seamless way to access additional details when hovering over specific data points.
 
-Explanation of the import mode used for data extraction.
-Imported Tables:
+- Drilldown:
+Drilldown functionality allows users to explore hierarchical data at different levels, promoting a more detailed view of the data hierarchy, enhancing user exploration.
 
-List and brief description of the tables imported for analysis.
-Measures (DAX Table):
+- Drillthrough:
+Drillthrough enables users to access detailed information related to specific data points, fostering in-depth analyses based on specific queries.
 
-Details on the measures created using DAX and organized in a table.
-Charts:
+- Interactive Charts:
+Interactive charts, like the Matrix Chart and QA Chart, empower users to dynamically interact with data, selecting and filtering points for a tailored visualization.
 
-Instructions and code snippets for creating various charts and visualizations.
-Usage of Drilldown and Drill Through:
+- Color Theme:
+A custom color theme ensures visual consistency, contributing to a cohesive and visually appealing presentation of data.
 
-Explanation of how to use drilldown and drill through features.
-Creating Product Hierarchy:
 
-Step-by-step guide on creating a hierarchy for product visualization.
-Tooltip Implementation:
-
-Instructions on implementing tooltips for enhanced data representation.
-Color Theme Creation:
-
-Code snippets and instructions for creating a custom color theme and exporting it as JSON.
-Additional Charts:
-
-Guidance on creating any extra charts necessary for storytelling.
-Conclusion:
-
-A summary and conclusion of the AdventureWorks data analysis project.
