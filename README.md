@@ -112,12 +112,63 @@ Unique Values: 1124</br>
 Min Value: 20110612</br>
 Max Value: 20140712</br>
 
-    - DueDateKey:</br>
+    - OrderQty:</br>
 Data Type: Integer</br>
 Null Values: 0</br>
-Unique Values: 1124</br>
-Min Value: 20110612</br>
-Max Value: 20140712</br>
+Unique Values: 41</br>
+Min Value: 1</br>
+Max Value: 44</br>
+
+    - OnlineOrderFlag:</br>
+Data Type: Boolean</br>
+Null Values: 0</br>
+Unique Values: 2</br>
+
+    - UnitPrice:</br>
+Data Type: Integer</br>
+Null Values: 0</br>
+Unique Values: 287</br>
+Min Value: 1.3282</br>
+Max Value: 3578.27</br>
+
+    - LineTotal:</br>
+Data Type: Integer</br>
+Null Values: 0</br>
+Unique Values: 1488</br>
+Min Value: 1.37</br>
+Max Value: 27893.62</br>
+
+    -Taxamt:</br>
+Data Type: Integer</br>
+Null Values: 0</br>
+Unique Values: 52513</br>
+Min Value: 0.11</br>
+Max Value: 2867.61</br>
+
+    - Fright:</br>
+Data Type: Integer</br>
+Null Values: 0</br>
+Unique Values: 51944</br>
+Min Value: 0.03</br>
+Max Value: 896.13</br>
+
+    - TotalDue:</br>
+Data Type: Integer</br>
+Null Values: 0</br>
+Unique Values: 55012</br>
+Min Value: 1.45</br>
+Max Value: 31657.23</br>
+
+    - SalesAmount:</br>
+Data Type: Integer</br>
+Null Values: 0</br>
+Unique Values: 1468</br>
+Min Value: 1.374</br>
+Max Value: 30992.91</br>
+```
+SalesAmount = 'vw_Fact|OrderDetails'[UnitPrice] * 'vw_Fact|OrderDetails'[OrderQty]
+```
+
 
 ## 4. Measures (DAX Table):
 ```
